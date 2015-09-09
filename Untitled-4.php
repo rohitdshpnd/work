@@ -1,6 +1,5 @@
 <?php 
 /*             Array Contains RB Flavours Amount                           */
-
 $sql = "SELECT * FROM services_profile a, profile b WHERE a.profile_id = b.id AND b.state = 'active'";		
 				
 			$row = $wpdb->get_results($sql);
@@ -24,14 +23,7 @@ $sql = "SELECT * FROM services_profile a, profile b WHERE a.profile_id = b.id AN
 					"rb_0_1"=>"0",
 					);
 
-			$rb_services = array("rb_c"=>"0", 
-                    "rb_12"=>"0", 
-					"rb_8_12"=>"0",
-					"rb_5_8"=>"0",
-					"rb_3_5"=>"0",
-					"rb_1_3"=>"0",
-					"rb_0_1"=>"0",
-					);					
+						
 				
 			$ic = 0;
 			$n = 0;
@@ -70,8 +62,7 @@ $sql = "SELECT * FROM services_profile a, profile b WHERE a.profile_id = b.id AN
 			$content = $wpdb->get_results($query);
 			//print_r($content);
 			//echo $content[0]->resume_writing;
-?>
- 
+?> 
 <div class="hori_nav">
 <ul class="nav nav-tabs font_clean_hori" id="ul_tabs">
    <li class="active li-font-active" id="tab_li1"><a id="tab_li_a1" href="#tab1" data-toggle="tab" style="border-top-left-radius:5px;border-top-right-radius:5px; border-top:5px solid #FEC329; color:#5296da; font-weight:500; box-shadow:-1px -5px 8px -2px rgba(0, 0, 0, 0.6);" >Resume Writing</a></li>
